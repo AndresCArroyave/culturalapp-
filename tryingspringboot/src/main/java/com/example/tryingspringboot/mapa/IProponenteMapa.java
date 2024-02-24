@@ -13,7 +13,7 @@ public interface IProponenteMapa {
             @Mapping(source = "nombre_proponente", target = "nombreProponente"),
             @Mapping(source = "trayectoria", target = "trayectoria"),
             @Mapping(source = "representante", target = "nombreRepresentante"),
-            @Mapping(source = "tipoProponente.tipo_proponente", target = "tipo_proponente")
+            @Mapping(source = "tipoProponente.tipo_proponente", target = "tipo_proponente") //Modelo y punto para traer el campo del modelo Proponente
     })
 
     ProponenteDTO proponenteToDTO(Proponente proponente);
